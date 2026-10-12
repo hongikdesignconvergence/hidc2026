@@ -1,0 +1,6 @@
+@import "@repo/ui/globals.css";
+
+@source ".";
+@source "../../../packages/ui/src";
+@source "../../../packages/blocks/src";
+@source "../../../packages/editor/src";

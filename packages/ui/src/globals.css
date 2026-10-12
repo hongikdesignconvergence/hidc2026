@@ -1,0 +1,35 @@
+@import "tailwindcss" source(none);
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --color-canvas: #f7f7f5;
+  --color-ink: #181816;
+  --color-muted: #72716c;
+  --color-line: #deded9;
+  --color-paper: #ffffff;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    @apply bg-canvas;
+  }
+
+  body {
+    @apply m-0 bg-canvas font-sans text-ink antialiased;
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+
+  img {
+    display: block;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@repo/content",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./file": "./src/file-repository.ts",
+    "./local": "./src/local-repository.ts",
+    "./sample-posts": "./src/sample-posts.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/blocks": "*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "26.4.1",
+    "eslint": "10.9.1",
+    "typescript": "7.0.2"
+  }
+}
